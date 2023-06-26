@@ -82,6 +82,7 @@ h2, p {
     .widgets {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 
     h1, h2 {
@@ -89,3 +90,33 @@ h2, p {
     }
 }
 
+/* min width */
+
+@media screen and (min-width: 922px) {
+
+    header {
+        grid-template-columns: 70% 30%;
+    }
+
+    .banners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .widgets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .publi {
+        display: grid;
+        grid-template-rows: 2;
+        justify-content: end;
+    }
+
+    .footer {
+        grid-template-columns: 70% 30%;
+    }
+}
