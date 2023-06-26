@@ -1,0 +1,91 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr;
+    font-family: 'Nunito', sans-serif;
+    border: 1px solid black ;
+}
+
+p {
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.lorem {
+    margin: 0 7px 0 7px;
+}
+
+h1 {
+    font-size: 2.7em;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 0 7px 0 7px;
+}
+
+h1, .publi, footer {
+    display: grid;
+    grid-template-columns: 2fr;
+    border: 1px solid black ;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+h2, p {
+    width: 100%;
+    display: inline-block;
+}
+
+.banners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.banners figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 12px 20px 12px;
+}
+
+.banners figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+.widget {
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .widgets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}
+
