@@ -20,43 +20,51 @@ h2 {
     padding: 0 7px;
 }
 
-img {
-    width: 100%;
-}
-
 p {
     font-size: 1rem;
 }
 
-.gridContainer {
-    display: grid;
-    grid-template-columns: 2fr;
-}
-
-
-.lorem {
-    margin: 0 7px;
-    text-align: left;
+img {
+    width: 100%;
 }
 
 header, .publi, footer {
-    display: grid;
     border: 1px solid #000;
     text-align: center;
     font-size: 1.6em;
     margin-bottom: 15px;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 2fr;
+    border: 1px solid #000;
+}
+
+.lorem {
+    margin: 0 7px;
+    text-align: left;
+}
+
 .banners {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
-    justify-content: center;
+}
+
+.banners > * {
+    width: 100%;   
 }
 
 .widget {
     display: grid;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #000;
     margin-bottom: 15px;
 }
 
@@ -64,6 +72,9 @@ header, .publi, footer {
 
 /* min widt min-width: 768px */
 @media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
 
 }
 
