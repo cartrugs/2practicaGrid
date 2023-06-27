@@ -15,7 +15,7 @@ main {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -26,21 +26,11 @@ h2 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 img {
     width: 100%;
-}
-
-header,
-main,
-aside.publi,
-footer {
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 1.3em;
-    margin-bottom: 15px;
 }
 
 .container {
@@ -51,12 +41,14 @@ footer {
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .lorem {
-    margin: 0 7px;
+    margin: 5 7px;
     text-align: left;
 }
+
 
 .banners {
     display: flex;
@@ -65,7 +57,7 @@ footer {
     gap: 20px;
 }
 
-.banners>* {
+.banners > * {
     width: 100%;
 }
 
@@ -73,19 +65,25 @@ header#cabecera,
 main,
 aside.publi,
 footer {
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 10px;
+    margin-bottom: 15px;
     grid-column: 1 / -1;
 }
 
-.widgets {
+.widget {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 20px;
     border: 1px solid #000;
+    padding: 10px;
 }
 
 /* Media queries */
 
-/* min widt min-width: 768px */
+/* min-width: 768px */
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -110,12 +108,10 @@ footer {
         grid-row: 2 / 4;
     }
 
-    .banners>* {
-        width: calc(50% -10px);
+    .banners > * {
+        width: calc(50% - 10px);
     }
 }
-
-
 
 /* min widt min-width: 992px */
 
@@ -132,8 +128,7 @@ footer {
         grid-column: 1 / 2
     }
 
-    .banners {
-        width: calc(33.33% - 10px);
+    .banners > * {
+        width: calc(33.33% - 20px);
     }
-
 }
